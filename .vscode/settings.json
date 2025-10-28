@@ -1,0 +1,24 @@
+{
+    "emmet.variables": {
+        "lang": "de"
+    },
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.startupEditor": "none",
+    "editor.fontSize": 16,
+    "files.autoSave": "onFocusChange",
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "editor.linkedEditing": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.CustomBrowser": "firefox",
+    "php.debug.executablePath": "",
+    "php.validate.executablePath": "",
+    "explorer.confirmDelete": false,
+}
