@@ -1,0 +1,156 @@
+/* Typography */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* Allow percentage-based heights */
+html,
+body {
+    height: 100%;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+}
+
+/* Custom CSS */
+
+.body-container {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    font-family: "outfit", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: hsl(212, 45%, 89%);
+}
+
+@media screen and(min-width: 320px) {
+    .body-container {
+        max-width: 1440px;
+    }
+
+    .qrcode {
+        max-width: 375px;
+    }
+}
+
+.qrcode {
+    width: 320px;
+    padding: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 1px hsl(212, 45%, 89%);
+}
+
+.qrcode__content {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.qrcode__img {
+    margin: 0;
+}
+
+.qr-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.qrcode__title,
+.qrcode__title2 {
+    text-align: center;
+}
+
+.qrcode__title {
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+}
+
+.qrcode__title2 {
+    font-weight: 400;
+    color: hsl(216, 15%, 48%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
